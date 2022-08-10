@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_content_image">Imagen</string>
+    <string name="lbl_hint_description">Descripción</string>
+    <string name="msg_description_todo">Ingrese la descripción de la tarea:</string>
+    <string name="msg_description_todo_favorite">Marcar como favorita</string>
+    <string name="msg_continue_todo">Continuar</string>
+    <string name="msg_title_delete_todo">¿Desea eliminar la tarea?</string>
+    <string name="msg_content_delete_todo">Se eliminar la tarea %s</string>
+    <string name="btn_accept">Aceptar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="msg_todo_complete">Esta tarea ya ha sido completada.</string>
+    <string name="delete">Eliminar</string>
+    <string name="msg_description_required">El campo es requerido</string>
+</resources>

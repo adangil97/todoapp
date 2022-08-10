@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_todo"
+    app:startDestination="@id/todoListFragment">
+
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="mx.com.sendal.todoapp.todo.presentation.list.TodoListFragment"
+        tools:layout="@layout/fragment_todo_list">
+        <action
+            android:id="@+id/action_todoListFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="mx.com.sendal.todoapp.todo.presentation.detail.TodoDetailFragment"
+        android:label="fragment_todo"
+        tools:layout="@layout/fragment_todo_detail">
+        <argument
+            android:name="todo"
+            android:defaultValue="@null"
+            app:argType="mx.com.sendal.todoapp.todo.models.Todo"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_todoFragment_to_deleteTodoBottomSheet"
+            app:destination="@id/deleteTodoBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/deleteTodoBottomSheet"
+        android:name="mx.com.sendal.todoapp.todo.presentation.delete.TodoDeleteBottomSheet"
+        android:label="fragment_delete_todo"
+        tools:layout="@layout/bottom_sheet_todo_delete">
+        <argument
+            android:name="todo"
+            app:argType="mx.com.sendal.todoapp.todo.models.Todo" />
+    </dialog>
+</navigation>
