@@ -4,13 +4,15 @@ Ejemplo simple de un administrador de tareas basicas
 <H1>Tecnologias aplicadas</H1>
 
 <ol>
-  <li><p>t1</p></li>
-  <li><p>t1</p></li>
-  <li><p>t1</p></li>
-  <li><p>t1</p></li>
-  <li><p>t1</p></li>
-  <li><p>t1</p></li>
+  <li><p>Jetpack Android Navigation</p></li>
+  <li><p>Dagger Hilt</p></li>
+  <li><p>Kotlin Coroutines</p></li>
+  <li><p>Room Database</p></li>
+  <li><p>Lifecycle LiveData</p></li>
+  <li><p>ViewBinding</p></li>
 <ol>
+  
+  <H3>MVVM Clean architecture basado en la guia de arquitectura de app oficial de Android https://developer.android.com/jetpack/guide?hl=es-419</H3>
 
 <H1>Listado de tareas</H1>
 
